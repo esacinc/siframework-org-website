@@ -1,0 +1,143 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>S&amp;I Framework - Scenarios: Submitting Documentation to CMS</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  <div class="navglobal">
+                    <ul>
+                        <li>S&amp;I Framework Links:</li>
+                        <li><a href="http://www.siframework.org" target="_self">Home</a></li>
+                        <li><a href="http://wiki.siframework.org/" target="_new">Wiki</a></li>
+                        <li><a href="http://sibrowser.siframework.org/" target="_new">Repository Browser</a></li>
+                        <li><a href="http://pilots.siframework.org/" target="_new">Pilots</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+  <a href="index.html"><img src="images/onc_si_logo.png" alt="S&amp;I Framework" width="417" height="36" id="onc_si_logo" /></a>  
+  </div></div>
+  <!-- end .header -->
+  <!-- begin .nav1 -->
+  <div class="nav1">
+  	<ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="whatis.html">What is the S&amp;I Framework?</a></li>
+      <li><a href="getinvolved.html">How Do I Get Involved?</a></li>
+      <li><a href="accomplishments.html">What Have We Accomplished?</a></li>
+      <li><a href="implementation.html" class="active">How Do I Implement?</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end .nav1 -->
+  <div class="banner_main">
+<img src="images/banner_implementation_scenarios.png" alt="S&amp;I Scenarios" />
+	
+</div>
+  <!-- begin .middle -->
+  <div class="middle">
+    <!-- begin .content .nosblt (no sidebar on left) -->
+    <div class="content nosblt">
+      <h4 class="scenarios"><a href="implementation.html" class="blue">NwHIN 1.0 Portfolio</a> > <a href="scenarios.html" class="blue">Scenarios</a> > <a href="scenario_esmd.html" class="blue">Submitting Documentation to CMS</a></h4>
+      <h1 class="testimonials">Submitting Documentation to CMS</h1>
+      <h6>A physician&rsquo;s office sends requested medical documentation to CMS:</h6>
+      <div class="scenario_center"><p><img src="images/scenario_esMD.png" alt="S&amp;I Scenarios" title="A flow diagram illustrating the submission of payment eligibility documentation from a physician’s office to CMS via Direct. The physician's office compiles and sends the relevant documentation, which passes through the office’s HISP for encryption and is handed to the Health Information Handler (HIH). The HIH then properly packages the documentation, identifies the appropriate CMS web service endpoint using a Web Services Directory, and delivers it to CMS.
+" /></p></div>
+      <p>A physician&rsquo;s office receives a notice via fax or mail from the Centers for Medicare and Medicaid Services (CMS) requesting documentation proving payment eligibility. Instead of replying to CMS by fax or mail, a representative from the physician&rsquo;s office electronically sends all relevant documentation to CMS through a Health Information Handler (HIH). </p>
+      <div class="mu">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/clipboard_check.png" alt="Meaningful Use Objectives" /> </td>
+         <td width="15">&nbsp;</td>
+         <td valign="middle"><p class="mu"><strong>Meaningful Use Stage 2 Objectives related to submitting documentation to CMS: </strong>N/A in MU Stages 1 and 2
+CMS <br />
+esMD Program: <a href="https://www.cms.gov/ESMD/" target="_new">https://www.cms.gov/ESMD/</a>.</p></td></tr></table>
+</div>
+<br />
+     <h6>Common workflow steps for this scenario:</h6>
+     <div class="table_scenario1">
+     <table width="946" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_1.png" alt="1" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">After receiving either a mailed or faxed request for documentation to prove payment eligibility, a member of the physician office&rsquo;s staff scans the relevant documents into a consolidated PDF file and authors a Direct message.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_2.png" alt="2" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">When the staff member sends the message, it passes through the physician office&rsquo;s Health Information Service Provider (HISP), a contracted brokering agent responsible for the management of security and transport for directed exchange. As it passes through the HISP, the message is encrypted using the x.509 Certificate associated with the Health Information Handler (HIH), and is delivered to the HIH&rsquo;s Direct address in accordance with the Applicability Statement for Secure Health Transport.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_3.png" alt="3" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The HIH extracts the contents of the Direct message, and uses one of its utilities to package the PDF file into HITSP C62 format.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_4.png" alt="4" /></td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">After identifying the appropriate CMS web service endpoint, which is regularly validated in the Web Services Registry using the Web Services Registry Web Service Interface Specification, the HIH submits the package to CMS using a message that complies with esMD XDR Specification.</td>
+       </tr>
+     </table>
+</div>
+      <br />
+      <h6>NwHIN 1.0 specifications and resources recommended for scenario:</h6>
+ <div class="table_scenario2">     
+<table width="956" border="0" cellspacing="10" cellpadding="10">
+  <tr>
+    <td width="300" align="left" valign="top" bgcolor="#0194D3">
+    <h4 class="scenario2"> Content Structure</h4>
+      Guidance that specifies how to structure health information to ensure proper exchange
+</td>
+    <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+      <li><a href="http://hitsp.org/Handlers/HitspFileServer.aspx?FileGuid=3e822117-4910-4fa8-aee7-135bf719d6d8" target="_new">HITSP C62</a></li></ul></td>
+  </tr>
+  <tr>
+    <td width="300" align="left" valign="top" bgcolor="#BF311A">
+      <h4 class="scenario2">Transport and Security</h4>
+        Mechanisms and processes that safely exchange health information over the Internet
+  </td>
+    <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+      <li><a href="http://wiki.directproject.org/Applicability+Statement+for+Secure+Health+Transport" target="_new">Applicability Statement for Secure Health Transport</a></li>
+      <li><a href="http://tools.ietf.org/html/rfc5280" target="_new">x.509 for Certificates</a></li>
+      
+      <li><a href="http://healthit.hhs.gov/portal/server.pt/gateway/PTARGS_0_12811_955290_0_0_18/NHIN_WebServicesRegistryProductionSpecification_v3.0.pdf" target="_new">Web Services Registry Production Specification v3.0</a></li>
+      
+      <li><a href="http://healthit.hhs.gov/portal/server.pt/gateway/PTARGS_0_12811_955281_0_0_18/ESMD_XDR_Production_Specification_v1.0.pdf" target="_new">esMD XDR Production Specification v1.0</a></li></ul></td>
+  </tr>
+</table></div>
+
+      <p>&nbsp;</p>
+</div>
+    <!-- end .content .nosblt -->
+  </div>
+  <!-- end .middle -->
+  <!-- begin .footer -->
+  <div class="footer">
+    <p>&nbsp;</p>
+  </div>
+  <!-- end .footer -->
+</div>
+<!-- end .container -->
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>S&amp;I Framework - Scenarios: Specialist sends DICOM File to another Provider</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  <div class="navglobal">
+                    <ul>
+                        <li>S&amp;I Framework Links:</li>
+                        <li><a href="http://www.siframework.org" target="_self">Home</a></li>
+                        <li><a href="http://wiki.siframework.org/" target="_new">Wiki</a></li>
+                        <li><a href="http://sibrowser.siframework.org/" target="_new">Repository Browser</a></li>
+                        <li><a href="http://pilots.siframework.org/" target="_new">Pilots</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+  <a href="index.html"><img src="images/onc_si_logo.png" alt="S&amp;I Framework" width="417" height="36" id="onc_si_logo" /></a>  
+  </div></div>
+  <!-- end .header -->
+  <!-- begin .nav1 -->
+  <div class="nav1">
+  	<ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="whatis.html">What is the S&amp;I Framework?</a></li>
+      <li><a href="getinvolved.html">How Do I Get Involved?</a></li>
+      <li><a href="accomplishments.html">What Have We Accomplished?</a></li>
+      <li><a href="implementation.html" class="active">How Do I Implement?</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end .nav1 -->
+  <div class="banner_main">
+<img src="images/banner_implementation_scenarios.png" alt="S&amp;I Scenarios" />
+	
+</div>
+  <!-- begin .middle -->
+  <div class="middle">
+    <!-- begin .content .nosblt (no sidebar on left) -->
+    <div class="content nosblt">
+      <h4 class="scenarios"><a href="implementation.html" class="blue">NwHIN 1.0 Portfolio</a> > <a href="scenarios.html" class="blue">Scenarios</a> > <a href="scenario_toc4.html" class="blue">Specialist sends DICOM File to another Provider</a></h4>
+      <h1 class="testimonials">Specialist sends DICOM File to another Provider</h1>
+      <h6>A surgeon sends a patient’s DICOM Chest x-Rays to a specialist via Direct:</h6>
+      <div class="scenario_center">
+        <p><img src="images/scenario_TOC4.png" alt="S&amp;I Scenarios" title="A flow diagram illustrating the transfer of DICOM files from a specialist to another provider via Direct. A specialist sends the properly formatted content to a physician’s Direct address, which has been verified in the Provider Directory. The message passes through the specialist’s HISP, is encrypted and sent to another physician’s HISP where the message is decrypted and routed to the physician."/></p></div>
+      <p>A patient in a rural location is examined and X-rayed by a local surgeon and, afterwards, is referred by the surgeon to a cancer center to be seen by a specialist. The surgeon sends the patient&rsquo;s continuity of care document (CCD), operative notes, as well as the DICOM-formatted chest X-rays to the cancer center for viewing and analysis.</p>
+      <div class="mu">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/clipboard_check.png" alt="Meaningful Use Objectives" /> </td>
+         <td width="15">&nbsp;</td>
+         <td valign="middle"><p class="mu"><strong>Meaningful Use Stage 2 Objectives related to clinical information exchange: </strong>Imaging results consisting of the image itself and any explanation or other accompanying information are accessible through CEHRT. <em>(Meaningful Use Menu Set 3 for EPs)</em></p></td></tr></table>
+</div>
+<br />  
+      <h6>Common workflow steps for this scenario:</h6>
+     <div class="table_scenario1">
+     <table width="946" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_1.png" alt="1" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">After examining the patient, the surgeon sends the DICOM imaging file of the chest X-rays to the oncologist at the cancer center. To do so, he authors a Direct message that is structured in accordance with HL7 CDA Release 2 CCD specifications and attaches chest X-rays in DICOM format to the message.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_2.png" alt="2" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">When the surgeon sends the DICOM imaging message, it passes through his office&rsquo;s HISP, a contracted brokering agent responsible for the management of security and transport for directed exchange. In order to select the cancer center as the recipient, the user accesses a search dialogue in the HISP's user interface, which queries a Provider Directory (adhering to the Certificate Discovery for Direct specification) for the right Direct address. As it passes through the HISP, the message is encrypted using the x.509 Certificate associated with the surgeon, and is delivered to the cancer center Direct address in accordance with the Applicability Statement for Secure Health Transport.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_3.png" alt="3" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The cancer center&rsquo;s HISP decrypts the message and views the patient&rsquo;s DICOM X-rays, CCD, and operative notes.</td>
+       </tr>
+     </table>
+</div>
+      <br />
+      <h6>NwHIN 1.0 specifications and resources recommended for scenario:</h6>
+      <div class="table_scenario2">
+        <table width="956" border="0" cellspacing="10" cellpadding="10">
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#0194D3">
+              <h4 class="scenario2"> Content Structure</h4>
+              Guidance that specifies how to structure health information to ensure proper exchange</td>
+            <td width="587" align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=6">HL7 CDA Release 2 CCD</a></li></ul></td>
+          </tr>
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#BF311A"><h4 class="scenario2">Transport and Security</h4>
+              Mechanisms and processes that safely exchange health information over the Internet</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://wiki.directproject.org/Applicability+Statement+for+Secure+Health+Transport" target="_new">Applicability Statement for Secure Health Transport</a><a href="http://www.siframework.org"></a></li>
+              <li><a href="http://tools.ietf.org/html/rfc5280" target="_new">x.509 for Certificates</a><a href="http://www.siframework.org" target="_new"></a></li>
+            <li><a href="http://wiki.siframework.org/file/view/Certificate Discover for Direct Project Implementation Guide.pdf" target="_new">Certificate Discovery using Domain Name System (DNS) and Lightweight Directory Access Protocol (LDAP)</a></li></ul></td>
+          </tr>
+        </table>
+      </div>
+      <p>&nbsp;</p>
+</div>
+    <!-- end .content .nosblt -->
+  </div>
+  <!-- end .middle -->
+  <!-- begin .footer -->
+  <div class="footer">
+    <p>&nbsp;</p>
+  </div>
+  <!-- end .footer -->
+</div>
+<!-- end .container -->
+</body>
+</html>
