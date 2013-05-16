@@ -1,0 +1,521 @@
+/* ---------- ONC S&I FRAMEWORK PILOTS SITE CSS ---------- */
+
+
+body {
+	font: 76%/1.25 Arial, Verdana, sans-serif;
+	background: #FFF;
+	margin: 0;
+	padding: 0;
+	color: #000;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;
+	text-align: left;	 /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+
+h1 {
+	color: #497DE3;
+	font-size: 1.7em;
+	font-weight: normal;
+	margin-bottom: 0.5em;
+}
+
+h2 {
+  color: #2C569B;
+  font-size: 1.35em;
+}
+
+h3 {
+  color: #203763;
+  font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1em;
+	margin: 0px;
+	padding: 0px;
+}
+
+h5 {
+	font-size: 1.2em;
+	color: #900;
+	padding: 0px;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 0.5em;
+	margin-left: 0px;
+}
+
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+
+/* ~~ Styling for your site's links must remain in this order - including the group of selectors that create the hover effect. ~~ */
+a:link {
+	color: #6699FF;
+	text-decoration: none; /* unless you style your links to look extremely unique, it's best to provide underlines for quick visual identification */
+}
+a:visited {
+	color: #6699FF;
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	color: #666;
+	text-decoration: none;
+}
+
+/* ~~this fixed width container surrounds the other divs~~ */
+.container {
+	width: 1007px;
+	background: #FFF;
+	border: 1px solid #497DE3;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+}
+
+.sidepadding15 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.sidepadding5 {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* ~~ the header is not given a width. It will extend the full width of your layout. It contains an image placeholder that should be replaced with your own linked logo ~~ */
+.header {
+}
+
+.header div[class^="nav"] {
+  text-align: right;
+}
+
+.header ul {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin-top: 0;
+}
+
+.header li, .footer li {
+  display: inline-block;
+  margin: 0;
+  font: 12px Arial, Verdana, sans-serif;
+  line-height: 1em;
+} 
+
+.header .navglobal {
+  height: 15px;
+} 
+
+.navglobal {
+  background: #497DE3;
+  color: #A9CCEE;
+  padding: 8px 10px;
+  vertical-align: middle;
+}
+
+.navglobal a, .navglobal a:link, .navglobal a:visited {
+  color: #DCEDF5;
+  text-decoration: none;
+  padding: 0 8px;
+}
+
+.navglobal a:hover, .navglobal a:active, .navglobal a:focus {
+  text-decoration: underline;
+}
+
+.banner {
+	background: #497DE3 url(../images/header_bkgd.png) repeat-y left top;
+    border-bottom: 1px solid #A9CCEE;
+	height: 65px;
+}
+
+
+.header img {
+  margin: 15px;
+}
+
+.banner_main {
+	width: 1007px;
+	background-color: #FFFFFF;
+	background-position: left top;
+	margin-top: 0px;
+	margin-right: 0px;
+	margin-bottom: 20px;
+	margin-left: 0px;
+}
+
+div.nav1 {
+  font-size: 1.1em;
+  text-align: right;
+  padding: 14px 10px;
+}
+
+.nav1 ul.nav{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+}
+
+div.nav1 ul.nav li {
+  display: inline-block;
+  margin: 0;
+}
+
+div.nav1 ul.nav a {
+  color: #42413C;
+  padding: 0 15px;
+}
+
+div.nav1 ul.nav a:link, div.nav1 ul.nav a:visited {
+  text-decoration: none;
+}
+
+div.nav1 ul.nav a:hover {
+  color: #8a8a8a;
+}
+
+div.nav1 ul.nav a:active, div.nav1 ul.nav a.active {
+  color: #497DE3;
+  font-weight: bold;
+}
+
+/* --  .middle is a wrapper for .sblt and .content, basically anything between div.nav1 and .footer --*/
+.middle {
+  background: url(../images/sblt_bkgd.jpg) repeat-y left top;
+  height: 100%;
+}
+
+/* ~~ These are the columns for the layout. ~~ 
+
+1) Padding is only placed on the top and/or bottom of the divs. The elements within these divs have padding on their sides. This saves you from any "box model math". Keep in mind, if you add any side padding or border to the div itself, it will be added to the width you define to create the *total* width. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design. You may also choose to remove the padding on the element in the div and place a second div within it with no width and the padding necessary for your design.
+
+2) No margin has been given to the columns since they are all floated. If you must add margin, avoid placing it on the side you're floating toward (for example: a right margin on a div set to float right). Many times, padding can be used instead. For divs where this rule must be broken, you should add a "display:inline" declaration to the div's rule to tame a bug where some versions of Internet Explorer double the margin.
+
+3) Since classes can be used multiple times in a document (and an element can also have multiple classes applied), the columns have been assigned class names instead of IDs. For example, two sidebar divs could be stacked if necessary. These can very easily be changed to IDs if that's your preference, as long as you'll only be using them once per document.
+
+4) If you prefer your nav on the right instead of the left, simply float these columns the opposite direction (all right instead of all left) and they'll render in reverse order. There's no need to move the divs around in the HTML source.
+
+*/
+.sblt {
+	float: left;
+	width: 235px;
+	background: url(../images/sblt_bkgd.jpg) repeat-y left top;
+	padding-bottom: 10px;
+	border: 1px solid #A9CCEE;
+	border-left: none;
+	height: 100%;
+}
+
+.sblt h2, .sblt h3 {
+  font-size: 1.2em;
+  font-weight: normal;
+  color: #42609C;
+  padding-top: 10px;
+}
+
+.sblt p {
+  line-height: 1.25em;
+  color: #42609C;
+}
+
+.sblt #accordion h3 {
+  font-size: 1em;
+  background: #FFF url(../images/sblt_accordion_h3_bkgd.png) repeat-x left bottom;
+  border-top: 1px solid #497DE3;
+  border-bottom: 1px solid #DBE5F9;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  margin: 0;
+}
+
+.sblt #accordion a {
+  text-decoration: none;
+}
+
+/* ~~ The navigation list styles (can be removed if you choose to use a premade flyout menu like Spry) ~~ */
+.sblt ul.nav2 {
+	list-style: none; /* this removes the list marker */
+	border-bottom: 0 solid #A9CCEE; /* this creates the top border for the links - all others are placed using a bottom border on the LI */
+	margin-bottom: 0; /* this creates the space between the navigation on the content below */
+}
+
+.sblt #selectable li, .sblt ul.nav2 li {
+	border-bottom: 1px solid #DBE5F9; /* this creates the button separation */
+}
+
+.sblt ul.nav2 a, .sblt ul.nav2 a:visited { /* grouping these selectors makes sure that your links retain their button look even after being visited */
+	padding: 4px 5px;
+	display: block; /* this gives the link block properties causing it to fill the whole LI containing it. This causes the entire area to react to a mouse click. */
+	width: 225px;  /*this width makes the entire button clickable for IE6. If you don't need to support IE6, it can be removed. Calculate the proper width by subtracting the padding on this link from the width of your sidebar container. */
+	text-decoration: none;
+}
+
+.sblt ul.nav2 a:hover, .sblt ul.nav2 a:active, .sblt ul.nav2 a:focus { /* this changes the background and text color for both mouse and keyboard navigators */
+  background: #FFECC1 url(../images/sblt_listitem_bkgd.png) repeat-x left top;
+}
+
+.sblt .imgcheckbox {
+  padding: 0 10px 0 5px;
+}
+
+
+/* ----- CONTENT STYLES ----- */
+
+.content {
+	width: 760px; /* 1007 -236 -11 */
+	margin-left: 25px;
+	float: left;
+	border: 0px none #A9CCEE;
+	margin-right: 25px;
+	padding-top: 10px;
+	padding-right: 0;
+	padding-bottom: 10px;
+	padding-left: 0;
+	background-color: #FFF;
+}
+
+.nosblt {
+	width: 956px;
+	text-align: left;
+}
+
+div.faq h4 {
+	margin-bottom: 5px;
+}
+
+h1.mapcounts {
+  color: #A9CCEE;
+  display: inline-block;
+  padding-left: 50px;
+}
+
+h1.mapcounts .alpha {
+  font-size: .7em;
+  font-weight: normal;
+}
+
+h1.mapcounts .numeric {
+	font-weight: bold;
+	padding-left: 8px;
+}
+
+.content area {
+  border: none;
+  outline: none;
+}
+
+.intro {
+  color: #42609C;
+  line-height: 1.4em;
+}
+
+div.benefits {
+  margin: 25px 0 25px 35px;
+}
+
+div.benefits h2 {
+  color: #C67602;
+  padding-left: 5px;
+  margin-bottom: 3px;
+}
+
+div.benefits h3 {
+  color: #794801;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+div.benefitsbox {
+  border: 1px solid #C67602;
+  border-right: none;
+}
+
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+
+/* ~~ The footer ~~ */
+.footer {
+	padding: 10px;
+	background: #497DE3;
+	position: relative;/* this gives IE6 hasLayout to properly clear */
+	clear: both; /* this clear property forces the .container to understand where the columns end and contain them */
+}
+
+/* ~~ miscellaneous float/clear classes ~~ */
+.fltrt {  /* this class can be used to float an element right in your page. The floated element must precede the element it should be next to on the page. */
+	float: right;
+	margin-left: 8px;
+}
+.fltlft { /* this class can be used to float an element left in your page. The floated element must precede the element it should be next to on the page. */
+	float: left;
+	margin-right: 8px;
+}
+.clearfloat { /* this class can be placed on a <br /> or empty div as the final element following the last floated div (within the #container) if the #footer is removed or taken out of the #container */
+	clear:both;
+	height:0;
+	font-size: 1px;
+	line-height: 0px;
+}
+.container .middle .content.nosblt.faq table {
+	text-align: left;
+	margin: 0;
+	padding-top: 20px;
+	padding-right: 0;
+	padding-bottom: 0;
+	padding-left: 0;
+}
+.container .middle .content.nosblt.faq table tr {
+	vertical-align: middle;
+	margin: 0px;
+	padding: 0px;
+}
+
+.container .middle .content.nosblt.faq table tr td p {
+	padding: 0px;
+	text-align: justify;
+}
+.container .middle .content.nosblt.faq table tr td h4 {
+	padding: 0px;
+}
+.icons {
+	height: 60px;
+	width: 50px;
+	margin-right: 15px;
+	float: left;
+}
+
+.container .middle .content.nosblt.int .int p {
+	margin-bottom: 25px;
+}
+.container .middle .content.nosblt.int h3 {
+	font-size: 1.2em;
+	color: #900;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* image replacement */
+        .graphic, #prevBtn, #nextBtn, #slider1prev, #slider1next{
+            margin:0;
+            padding:0;
+            display:block;
+            overflow:hidden;
+            text-indent:-8000px;
+            }
+    /* // image replacement */
+	
+	/* Easy Slider */
+
+	#slider ul, #slider li,
+	#slider2 ul, #slider2 li{
+		margin:0;
+		padding:0;
+		list-style:none;
+		}
+	#slider2{margin-top:1em;}
+	#slider li, #slider2 li{ 
+		/* 
+			define width and height of list item (slide)
+			entire slider area will adjust according to the parameters provided here
+		*/ 
+		width:1007px;
+		height:215px;
+		overflow:hidden; 
+		}	
+	#prevBtn, #nextBtn,
+	#slider1next, #slider1prev{ 
+		display:block;
+		width:30px;
+		height:77px;
+		position:absolute;
+		left:-30px;
+		top:71px;
+		z-index:1000;
+		}	
+	#nextBtn, #slider1next{ 
+		left:1007px;
+		}														
+	#prevBtn a, #nextBtn a,
+	#slider1next a, #slider1prev a{  
+		display:block;
+		position:relative;
+		width:30px;
+		height:77px;
+		background:url(../images/btn_prev.gif) no-repeat 0 0;	
+		}	
+	#nextBtn a, #slider1next a{ 
+		background:url(../images/btn_next.gif) no-repeat 0 0;	
+		}	
+		
+	/* numeric controls */	
+
+	ol#controls{
+		margin:1em 0;
+		padding:0;
+		height:10px;
+			
+		
+		}
+	ol#controls li{
+		margin:0 10px 0 0; 
+		padding:0;
+		float:left;
+		list-style:none;
+		height:10px;
+		width: 10px;
+		line-height:10px;
+		border-radius:10px;
+		}
+	ol#controls li a{
+	float:left;
+	height:10px;
+	line-height:10px;
+	border:0px solid #999;
+	color:#E0E0E1;
+	padding:0 10px;
+	text-decoration:none;
+	border-radius:10px;
+	background-color: #E0E0E1;
+		}
+	ol#controls li.current a{
+	background:#A2D8EF;
+	color:#A2D8EF;
+		}
+	ol#controls li a:focus, #prevBtn a:focus, #nextBtn a:focus{outline:none;}
+	
+/* // Easy Slider */
+.red:link, .red:visited {
+	color: #900;
+	text-decoration: none;
+}
+.red:hover, red:active, red:focus {
+	color: #666;
+	text-decoration: none;
+}
+ul li {
+	margin-bottom: 0.2em;
+	list-style: square;
+}
+ul {
+	margin-top: -0.4em;
+}
+
+.center {
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+.center p {
+	text-align: center;
+}
