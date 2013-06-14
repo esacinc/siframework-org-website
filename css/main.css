@@ -558,6 +558,19 @@ p.mu {
 	width: 50px;
 }
 
+.logo {
+	height: 50px;
+	width: 50px;
+	margin-right: 15px;
+	margin-bottom: 60px;
+	float: left;
+}
+
+.logo img {
+	height: 60px;
+	width: 50px;
+}
+
 /* ~~ Class for centering and padding the image on the framework.htm page ~~ */
 .center {
 	padding-top: 1em;
