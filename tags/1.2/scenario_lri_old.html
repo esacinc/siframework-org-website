@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>S&amp;I Framework - Scenarios: Lab Results Delivery</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script type="text/javascript" src="js/analytics.js" ></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  <div class="navglobal">
+                    <ul>
+                        <li>S&amp;I Framework Links:</li>
+                        <li><a href="http://www.siframework.org" target="_self">Home</a></li>
+                        <li><a href="http://wiki.siframework.org/" target="_new">Wiki</a></li>
+                        <li><a href="http://sibrowser.siframework.org/" target="_new">Browser</a></li>
+                        <li><a href="http://pilots.siframework.org/" target="_new">Pilots</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+  <a href="index.html"><img src="images/onc_si_logo.png" alt="S&amp;I Framework" width="417" height="36" id="onc_si_logo" /></a>  
+  </div></div>
+  <!-- end .header -->
+  <!-- begin .nav1 -->
+  <div class="nav1">
+  	<ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="whatis.html" class="active">What is the S&amp;I Framework?</a></li>
+      <li><a href="getinvolved.html">How Do I Get Involved?</a></li>
+      <li><a href="accomplishments.html">What Have We Accomplished?</a></li>
+      <li><a href="implementation.html">How Do I Implement?</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end .nav1 -->
+  <div class="banner_main">
+<img src="images/banner_implementation_scenarios.png" alt="S&amp;I Scenarios" />
+	
+</div>
+  <!-- begin .middle -->
+  <div class="middle">
+    <!-- begin .content .nosblt (no sidebar on left) -->
+    <div class="content nosblt">
+      <h1>NwHIN 1.0 Portfolio > Scenarios > Lab Results Delivery </h1>
+      <h3>A laboratory sends a patient&rsquo;s lab results to the ordering physician:</h3>
+      <div class="center"><p><img src="images/scenario_LRI.png" alt="S&amp;I Functions" /></p></div>
+      <p>A patient visits his primary care physician for a routine visit. His doctor determines that lab work must be performed and orders for the results to be sent to her electronically from the laboratory upon completion. Once the laboratory tests are complete, the lab constructs a report to send electronically to the ordering physician. The laboratory adheres to HL7 v 2.5.1 Laboratory Results Interface Implementation Guidance to structure the content of the patient&rsquo;s Electronic Health Record (EHR). </p>
+      <p>LOINC and RELMA 5.5 Vocabulary and Code Set specifications are used as naming conventions for data within the EHR. Finally, to safeguard the patient&rsquo;s laboratory results during transmittal via the Internet, the laboratory employs transport and security mechanisms: Certificate Discovery using DNS and LDAP, the Applicability Statement for Secure Health Transport, and x.509 for Certificates. Using its Direct email account, the laboratory sends the electronic lab results report to the Ordering Physician&rsquo;s Direct email address. </p>
+      <br />
+      <h3>NwHIN 1.0 specifications needed to implement this scenario:</h3>
+ <div class="table_scenario">     
+<table width="956" border="0" cellspacing="10" cellpadding="10">
+  <tr>
+    <td width="300" align="left" valign="top" bgcolor="#0194D3"><p><h3_scenario> 1. Content Structure</h3_scenario><br />
+      Guidance that specifies how to structure health information to ensure proper exchange</p>
+    </td>
+    <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+      <li><a href="http://wiki.siframework.org/file/view/V251_IG_SIF_LABRESULTS_R1_N1_v15_Pilot_Use_Only.pdf">HL7 v.2.5.1 Laboratory Results Interface Implementation Guide</a></li>
+    </ul></td>
+  </tr>
+  <tr>
+    <td width="300" align="left" valign="top" bgcolor="#002B54">
+      <p align="center"><h3_scenario>2. Vocabulary &amp; Code Sets</h3_scenario><br />
+        Specifications that identify common naming convention necessary for proper health information exchange</p>
+    </td>
+    <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+      <li><a href="http://loinc.org/downloads">Logistical Observation Identifiers names and Codes (LOINC) 2.38</a></li>
+        <li><a href="http://loinc.org/downloads">RELMA 5.5</a></li>
+      </ul></td>
+  </tr>
+  <tr>
+    <td width="300" align="left" valign="top" bgcolor="#BF311A">
+     <p><h3_scenario>3. Transport and Security</h3_scenario><br />
+       Mechanisms and processes that safely exchange health information over the Internet</p>
+</td>
+    <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+      <li><a href="https://docs.google.com/document/d/1igDpIizm7CTfV-fUw_1EnrCUGIljFEgLPRHpgK5iaec/edit">Certificate Discovery using Domain Name System (DNS) and Lightweight Directory Access Protocol (LDAP)</a></li>
+    
+        <li><a href="http://wiki.directproject.org/Applicability+Statement+for+Secure+Health+Transport">Applicability Statement for Secure Health Transport</a>      </li>
+     
+        <li><a href="http://tools.ietf.org/html/rfc5280">x.509 for Certificates</a></li>
+    </ul></td>
+  </tr>
+</table></div>
+
+      <p>&nbsp;</p>
+</div>
+    <!-- end .content .nosblt -->
+  </div>
+  <!-- end .middle -->
+  <!-- begin .footer -->
+  <div class="footer">
+    <p>&nbsp;</p>
+  </div>
+  <!-- end .footer -->
+</div>
+<!-- end .container -->
+</body>
+</html>
