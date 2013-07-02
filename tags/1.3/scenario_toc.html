@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>S&amp;I Framework - Scenarios: Transitioning to a New Provider of Care</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script type="text/javascript" src="js/analytics.js" ></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  <div class="navglobal">
+                    <ul>
+                        <li>S&amp;I Framework Links:</li>
+                        <li><a href="http://www.siframework.org" target="_self">Home</a></li>
+                        <li><a href="http://wiki.siframework.org/" target="_new">Wiki</a></li>
+                        <li><a href="http://sibrowser.siframework.org/" target="_new">Repository Browser</a></li>
+                        <li><a href="http://pilots.siframework.org/" target="_new">Pilots</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+  <a href="index.html"><img src="images/onc_si_logo.png" alt="S&amp;I Framework" width="417" height="36" id="onc_si_logo" /></a>  
+  </div></div>
+  <!-- end .header -->
+  <!-- begin .nav1 -->
+  <div class="nav1">
+  	<ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="whatis.html">What is the S&amp;I Framework?</a></li>
+      <li><a href="getinvolved.html">How Do I Get Involved?</a></li>
+      <li><a href="accomplishments.html">What Have We Accomplished?</a></li>
+      <li><a href="implementation.html" class="active">How Do I Implement?</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end .nav1 -->
+  <div class="banner_main">
+<img src="images/banner_implementation_scenarios.png" alt="S&amp;I Scenarios" />
+	
+</div>
+  <!-- begin .middle -->
+  <div class="middle">
+    <!-- begin .content .nosblt (no sidebar on left) -->
+    <div class="content nosblt">
+      <h4 class="scenarios"><a href="implementation.html" class="blue">NwHIN 1.0 Portfolio</a> > <a href="scenarios.html" class="blue">Scenarios</a> > <a href="scenario_toc.html" class="blue">Transitioning to a New Provider of Care</a></h4>
+      <h1 class="testimonials">Transitioning to a New Provider of Care</h1>
+      <h6>An emergency department physician sends a continuity of care document for a patient to her primary care physician:</h6>
+      <div class="scenario_center"><p><img src="images/scenario_TOC.png" alt="S&amp;I Scenarios" title="A flow diagram illustrating the transfer of a continuity of care document from emergency department (ED) physician to the patient's physician via Direct. The ED physician sends the properly formatted document to the primary care physician's Direct address, which is verified in the Provider Directory. The message passes through the hospital's HISP, where it is encrypted and sent to the physician's HISP. The primary care physician's HISP then decrypts the message and routes it to the primary care physician."/></p></div>
+      <p>A patient on vacation in Colorado visits an emergency department (ED) physician after injuring her arm in a biking accident. The ED physician orders x-rays and determines that the patient has fractured her arm. He sets the arm in a cast, prescribes pain medication, and requests that the patient visit her primary care physician in two weeks for a follow-up visit. Ahead of the follow-up visit, the ED physician electronically sends a Continuity of Care Document (CCD) to the patient&rsquo;s primary care physician. </p>
+      <div class="mu">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/clipboard_check.png" alt="Meaningful Use Objectives" /> </td>
+         <td width="15">&nbsp;</td>
+         <td valign="middle"><p class="mu"><strong>Meaningful Use Stage 2 Objectives related to transitions of care: </strong>The EP who transitions their patient to another setting of care or provider of care or refers their patient to another provider of care should provide summary of care record for each transition of care or referral. <em>(Meaningful Use Menu Set 15 for EPs, Meaningful Use Menu Set 12 or EH/CAHs)</em></p></td></tr></table>
+</div>
+<br />  
+      <h6>Common workflow steps for this scenario:</h6>
+     <div class="table_scenario1">
+     <table width="946" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_1.png" alt="1" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The ED physician extracts a Continuity of Care Document (CCD) for the patient from his EHR, which has been properly formatted according to the HL7 CDA Release 2 CCD standard using ICD-9-CM, Logistical Observation Identifiers names and Codes (LOINC) 2.38, RxNorm, and Systemized Nomenclature of Medical--Clinical Terms (SNOMED-CT). He then authors a Direct message and attaches the CCD. In order to select the patient&rsquo;s primary care physician as the recipient, the ED physician accesses a search dialogue in the HISP's user interface, which queries a Provider Directory (adhering to the Certificate Discovery for Direct specification) for the right Direct address.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_2.png" alt="2" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">When the ED physician sends the message, it passes through the hospital&rsquo;s Health Information Service Provider (HISP), a contracted brokering agent responsible for the management of security and transport for directed exchange. As it passes through the HISP, the message is encrypted using the x.509 Certificate associated with the primary care physician, and is delivered to the primary care physician&rsquo;s Direct address in accordance with the Applicability Statement for Secure Health Transport.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_3.png" alt="3" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The primary care physician&rsquo;s HISP decrypts the message and routes it to the primary care physician.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_4.png" alt="4" /></td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The primary care physician uses the HISP&rsquo;s user interface to access the CCD in his Direct inbox.</td>
+       </tr>
+     </table>
+</div>
+      <br />
+      <h6>NwHIN 1.0 specifications and resources recommended for scenario:</h6>
+      <div class="table_scenario2">
+        <table width="956" border="0" cellspacing="10" cellpadding="10">
+          <tr>
+            <td width="300" align="left" valign="top" bgcolor="#0194D3">
+              <h4 class="scenario2"> Content Structure</h4>
+              Guidance that specifies how to structure health information to ensure proper exchange</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+            <li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=6" target="_new">HL7 CDA Release 2 CCD</a></li></ul></td>
+          </tr>
+          <tr>
+            <td width="300" align="left" valign="top" bgcolor="#002B54">
+              <h4 class="scenario2">Vocabulary &amp; Code Sets</h4>
+              Specifications that identify common naming convention necessary for proper health information exchange</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://www.cdc.gov/nchs/icd/icd9cm.htm" target="_new">ICD-9-CM</a></li>
+              <li><a href="http://loinc.org/" target="_new">Logistical Observation Identifiers names and Codes (LOINC)
+2.38</a></li>
+<li><a href="http://www.nlm.nih.gov/research/umls/rxnorm/" target="_new">RxNorm</a></li>
+              <li><a href="http://www.ihtsdo.org/join-us/use-snomed-ct-licenses/" target="_new">Systematized Nomenclature of Medicine--Clinical Terms (SNOMED-CT)</a></li>
+            </ul></td>
+          </tr>
+          <tr>
+            <td width="300" align="left" valign="top" bgcolor="#BF311A"><h4 class="scenario2">Transport and Security</h4>
+              Mechanisms and processes that safely exchange health information over the Internet</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://wiki.siframework.org/file/view/Certificate Discover for Direct Project Implementation Guide.pdf" target="_new">Certificate Discovery using Domain Name System (DNS) and Lightweight Directory Access Protocol (LDAP)</a></li>
+              <li><a href="http://wiki.directproject.org/Applicability+Statement+for+Secure+Health+Transport" target="_new">Applicability Statement for Secure Health Transport</a></li>
+              <li><a href="http://tools.ietf.org/html/rfc5280" target="_new">x.509 for Certificates</a></li>
+            </ul></td>
+          </tr>
+        </table>
+      </div>
+      <p>&nbsp;</p>
+</div>
+    <!-- end .content .nosblt -->
+  </div>
+  <!-- end .middle -->
+  <!-- begin .footer -->
+  <div class="footer">
+    <p>&nbsp;</p>
+  </div>
+  <!-- end .footer -->
+</div>
+<!-- end .container -->
+</body>
+</html>

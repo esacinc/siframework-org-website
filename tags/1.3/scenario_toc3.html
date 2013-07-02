@@ -1,0 +1,148 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>S&amp;I Framework - Scenarios: Sending a Virtual Consultation Summary to another Physician</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script type="text/javascript" src="js/analytics.js" ></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  <div class="navglobal">
+                    <ul>
+                        <li>S&amp;I Framework Links:</li>
+                        <li><a href="http://www.siframework.org" target="_self">Home</a></li>
+                        <li><a href="http://wiki.siframework.org/" target="_new">Wiki</a></li>
+                        <li><a href="http://sibrowser.siframework.org/" target="_new">Repository Browser</a></li>
+                        <li><a href="http://pilots.siframework.org/" target="_new">Pilots</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+  <a href="index.html"><img src="images/onc_si_logo.png" alt="S&amp;I Framework" width="417" height="36" id="onc_si_logo" /></a>  
+  </div></div>
+  <!-- end .header -->
+  <!-- begin .nav1 -->
+  <div class="nav1">
+  	<ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="whatis.html">What is the S&amp;I Framework?</a></li>
+      <li><a href="getinvolved.html">How Do I Get Involved?</a></li>
+      <li><a href="accomplishments.html">What Have We Accomplished?</a></li>
+      <li><a href="implementation.html" class="active">How Do I Implement?</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end .nav1 -->
+  <div class="banner_main">
+<img src="images/banner_implementation_scenarios.png" alt="S&amp;I Scenarios" />
+	
+</div>
+  <!-- begin .middle -->
+  <div class="middle">
+    <!-- begin .content .nosblt (no sidebar on left) -->
+    <div class="content nosblt">
+      <h4 class="scenarios"><a href="implementation.html" class="blue">NwHIN 1.0 Portfolio</a> > <a href="scenarios.html" class="blue">Scenarios</a> > <a href="scenario_toc3.html" class="blue">Sending a Virtual Consultation Summary to another Physician </a></h4>
+      <h1 class="testimonials">Sending a Virtual Consultation Summary to another Physician</h1>
+      <h6>A provider sends video and audio consultation summaries to another provider:</h6>
+      <div class="scenario_center">
+        <p><img src="images/scenario_TOC3.png" alt="S&amp;I Scenarios" title="A flow diagram illustrating the transfer of a virtual consultation summary to another physician via Direct. The physician sends the properly formatted content to another physician’s Direct address, which has been verified in the Provider Directory. The message passes through the ordering physician's HISP, where it is encrypted and sent to another physician’s HISP where the message is decrypted and routed to the intended physician."/></p></div>
+      <p>A patient living in a rural town visits a nearby telemedicine center to receive a virtual consultation from a subspecialist. After the patient&rsquo;s visit, the telemedicine center transfers any video/audio files resulting from the patient&rsquo;s visit to patient's primary care physician.</p>
+      <div class="mu">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/clipboard_check.png" alt="Meaningful Use Objectives" /> </td>
+         <td width="15">&nbsp;</td>
+         <td valign="middle"><p class="mu"><strong>Meaningful Use Stage 1 Objectives related to clinical information exchange: </strong>Capability to exchange key clinical information (for example, problem list, medication list, medication allergies, and diagnostic test results), among providers of care and patient authorized entities electronically. <em>(Meaningful Use Menu Set 14 for EPs, Meaningful Use Menu Set 7 for EH/CAHs; valid until 2013)</em></p></td></tr></table>
+</div>
+<br />  
+      <h6>Common workflow steps for this scenario:</h6>
+     <div class="table_scenario1">
+     <table width="946" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_1.png" alt="1" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">A patient is seen via a virtual consultation session at a telemedicine center by a subspecialist located elsewhere in the state. The consultation with the subspecialist is recorded and, in order to aid in the reduction of diagnostic ambiguity, the session is sent directly to the patient&rsquo;s referring primary care physician. A representative at the telemedicine center authors a Direct message and attaches the relevant audio/ video files which are structured according to the HITSP C62 and Consolidated CDA Implementation Guide v 2.0 specifications. The message is constructed using LOINC 2.38, SNOMED CT, RxNorm, and Unified Medical Language System vocabularies. In order to select the primary care physician as the recipient, the representative accesses a search dialogue in the Health Information Service Provider&rsquo;s (HISP) user interface, which queries a Provider Directory (following the Certificate Discovery for Direct implementation guide) for the correct Direct address.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_2.png" alt="2" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">When the representative sends the message, it passes through the telemedicine center&rsquo;s Health Information Service Provider (HISP), a contracted brokering agent responsible for the management of security and transport for directed exchange. As it passes through the HISP, the message is encrypted using the x.509 Certificate associated with primary care physician&rsquo;s Direct address, and delivered to the primary care physician&rsquo;s Direct address in accordance with the Applicability Statement for Secure Health Transport.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_3.png" alt="3" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The primary care physician&rsquo;s HISP decrypts the message and routes it to the primary care physician.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_4.png" alt="4" /></td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The primary care physician uses the HISP&rsquo;s user interface to access the audio and visual files from the virtual consultation in his Direct inbox.</td>
+       </tr>
+     </table>
+</div>
+      <br />
+      <h6>NwHIN 1.0 specifications and resources recommended for scenario:</h6>
+      <div class="table_scenario2">
+        <table width="956" border="0" cellspacing="10" cellpadding="10">
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#0194D3">
+              <h4 class="scenario2"> Content Structure</h4>
+              Guidance that specifies how to structure health information to ensure proper exchange</td>
+            <td width="587" align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="https://www.hl7.org/implement/standards/product_brief.cfm?product_id=7" target="_new">Consolidated CDA Implementation Guide v.2.0</a></li>
+              <li><a href="http://hitsp.org/Handlers/HitspFileServer.aspx?FileGuid=3e822117-4910-4fa8-aee7-135bf719d6d8" target="_new">HITSP C62</a></li></ul></td>
+          </tr>
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#002B54">
+              <h4 class="scenario2">Vocabulary &amp; Code Sets</h4>
+              Specifications that identify common naming convention necessary for proper health information exchange</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://www.nlm.nih.gov/research/umls/rxnorm/" target="_new">RxNorm</a><a href="http://www.siframework.org"></a></li>
+              <li><a href="http://www.ihtsdo.org/join-us/use-snomed-ct-licenses/" target="_new">Systematized Nomenclature of Medicine--Clinical Terms (SNOMED-CT)</a><a href="http://www.siframework.org" target="_new"></a><a href="http://www.siframework.org" target="_new"></a></li>
+              <li><a href="http://loinc.org/" target="_new">Logistical Observation Identifiers names and Codes (LOINC) 2.38</a><a href="http://www.siframework.org" target="_new"></a></li>
+              <li><a href="http://www.nlm.nih.gov/research/umls/index.html">Unified Medical Language System</a></li></ul></td>
+          </tr>
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#BF311A"><h4 class="scenario2">Transport and Security</h4>
+              Mechanisms and processes that safely exchange health information over the Internet</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://wiki.siframework.org/file/view/Certificate%20Discover%20for%20Direct%20Project%20Implementation%20Guide.pdf" target="_new">Certificate Discovery using Domain Name System (DNS) and Lightweight Directory Access Protocol (LDAP)</a></li>
+            <li><a href="http://wiki.directproject.org/Applicability+Statement+for+Secure+Health+Transport" target="_new">Applicability Statement for Secure Health Transport</a><a href="http://www.siframework.org" target="_new"></a></li>
+            <li><a href="http://tools.ietf.org/html/rfc5280" target="_new">x.509 for Certificates</a><a href="http://www.siframework.org"></a></li>
+            </ul></td>
+          </tr>
+        </table>
+      </div>
+      <p>&nbsp;</p>
+</div>
+    <!-- end .content .nosblt -->
+  </div>
+  <!-- end .middle -->
+  <!-- begin .footer -->
+  <div class="footer">
+    <p>&nbsp;</p>
+  </div>
+  <!-- end .footer -->
+</div>
+<!-- end .container -->
+</body>
+</html>
