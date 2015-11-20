@@ -1,0 +1,118 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>S&amp;I Framework - Scenarios: Sending Electronic Syndromic Surveillance Data to a Public Health Agency</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script type="text/javascript" src="js/analytics.js" ></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  <div class="navglobal">
+                    <ul>
+                        <li>S&amp;I Framework Links:</li>
+                        <li><a href="http://www.siframework.org" target="_self">Home</a></li>
+                        <li><a href="http://wiki.siframework.org/" target="_new">Wiki</a></li>
+                        <li><a href="http://confluence.siframework.org/x/UIBfAg" target="_new">Repository Browser</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+  <a href="index.html"><img src="images/onc_si_logo.png" alt="S&amp;I Framework" width="417" height="36" id="onc_si_logo" /></a>  
+  </div></div>
+  <!-- end .header -->
+  <!-- begin .nav1 -->
+  <div class="nav1">
+  	<ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="whatis.html">What is the S&amp;I Framework?</a></li>
+      <li><a href="getinvolved.html">How Do I Get Involved?</a></li>
+      <li><a href="accomplishments.html">What Have We Accomplished?</a></li>
+      <li><a href="implementation.html" class="active">How Do I Implement?</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end .nav1 -->
+  <div class="banner_main">
+<img src="images/banner_implementation_scenarios.png" alt="S&amp;I Scenarios" />
+	
+</div>
+  <!-- begin .middle -->
+  <div class="middle">
+    <!-- begin .content .nosblt (no sidebar on left) -->
+    <div class="content nosblt">
+      <h4 class="scenarios"><a href="implementation.html" class="blue">NwHIN 1.0 Portfolio</a> > <a href="scenarios.html" class="blue">Scenarios</a> > <a href="scenario_phr3.html" class="blue">Sending Electronic Syndromic Surveillance Data to a Public Health Agency</a></h4>
+      <h1 class="testimonials">Sending Electronic Syndromic Surveillance Data to a Public Health Agency</h1>
+      <h6>An emergency department provider sends electronic syndromic surveillance data to a public health agency:</h6>
+      <div class="scenario_center">
+        <p><img src="images/scenario_PH3.png" alt="S&amp;I Scenarios" title="A flow diagram illustrating the transfer of syndromic surveillance data from an emergency department’s EHR system to a public health agency. A clinician in the emergency department enters the patient’s symptoms into the EHR and a message is automatically sent to local, state, and national public health agencies for monitoring."/></p></div>
+      <p>A patient is seen at his local emergency department and is diagnosed with the influenza virus (flu) by a provider. In order to monitor the volume of patients in certain areas who have been diagnosed with the flu as well as to track the projected path of the spread of the virus, the emergency department provider enters the patient&rsquo;s symptoms into the EHR and a message is automatically sent to local, state, and national public health agencies for monitoring.</p>
+      <div class="mu">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/clipboard_check.png" alt="Meaningful Use Objectives" /> </td>
+         <td width="15">&nbsp;</td>
+         <td valign="middle"><p class="mu"><strong>Meaningful Use Stage 2 Objectives related to syndromic surveillance: </strong>Capability to submit electronic syndromic surveillance data to public health agencies except where prohibited, and in accordance with applicable law and practice. <em>(Meaningful Use Menu Set 1 for EPs)</em></p></td></tr></table>
+</div>
+<br />  
+      <h6>Common workflow steps for this scenario:</h6>
+     <div class="table_scenario1">
+     <table width="946" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_1.png" alt="1" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">After diagnosing a patient with the flu, the emergency department physician enters the patient&rsquo;s symptoms and final diagnosis into an EHR. Upon recognizing the flu diagnosis, the EHR automatically sends a message detailing the patient&rsquo;s symptoms to a state health agency.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_2.png" alt="2" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The state health agency to which the emergency department sends the message employs the use of Public Health Information Network (PHIN) Messaging. In order to ensure interoperability with the state agency, the emergency department&rsquo;s EHR sends the message in accordance with the HL7 2.5.1 Content Structure Specification and the Public Health Information Network (PHIN) Messaging Guide for Syndromic Surveillance: Emergency Department and Urgent Care Data Version 1.0.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"><img src="images/scenario_3.png" alt="3" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">Upon receipt of the syndromic surveillance message, the state health agency&rsquo;s staff may now use this data to track epidemic statistics.</td>
+       </tr>
+     </table>
+</div>
+      <br />
+      <h6>NwHIN 1.0 specifications and resources recommended for scenario:</h6>
+      <div class="table_scenario2">
+        <table width="956" border="0" cellspacing="10" cellpadding="10">
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#0194D3">
+              <h4 class="scenario2"> Content Structure</h4>
+              Guidance that specifies how to structure health information to ensure proper exchange</td>
+            <td width="587" align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://www.cdc.gov/phin/library/guides/Syndromic_Surveillance_Implementation_Guide_Release_1_4.pdf">PHIN Messaging Guide for Syndromic Surveillance: HL7 Version 2.5.1</a></li>
+              <li><a href="http://wiki.siframework.org/file/view/V251_IG_SIF_LABRESULTS_R1_N1_v15_Pilot_Use_Only.pdf" target="_new">HL7 v.2.5.1 Laboratory Results Interface Implementation Guide</a></li></ul></td>
+          </tr>
+        </table>
+      </div>
+      <p>&nbsp;</p>
+</div>
+    <!-- end .content .nosblt -->
+  </div>
+  <!-- end .middle -->
+  <!-- begin .footer -->
+  <div class="footer">
+    <p>&nbsp;</p>
+  </div>
+  <!-- end .footer -->
+</div>
+<!-- end .container -->
+</body>
+</html>

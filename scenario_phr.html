@@ -1,0 +1,123 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>S&amp;I Framework - Scenarios: Reporting a Cancer Diagnosis to a Public Health Cancer Registry</title>
+	
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<script type="text/javascript" src="js/analytics.js" ></script>
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+  <div class="navglobal">
+                    <ul>
+                        <li>S&amp;I Framework Links:</li>
+                        <li><a href="http://www.siframework.org" target="_self">Home</a></li>
+                        <li><a href="http://wiki.siframework.org/" target="_new">Wiki</a></li>
+                        <li><a href="http://confluence.siframework.org/x/UIBfAg" target="_new">Repository Browser</a></li>
+                    </ul>
+                </div>
+                <div class="banner">
+  <a href="index.html"><img src="images/onc_si_logo.png" alt="S&amp;I Framework" width="417" height="36" id="onc_si_logo" /></a>  
+  </div></div>
+  <!-- end .header -->
+  <!-- begin .nav1 -->
+  <div class="nav1">
+  	<ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="whatis.html">What is the S&amp;I Framework?</a></li>
+      <li><a href="getinvolved.html">How Do I Get Involved?</a></li>
+      <li><a href="accomplishments.html">What Have We Accomplished?</a></li>
+      <li><a href="implementation.html" class="active">How Do I Implement?</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </div>
+  <!-- end .nav1 -->
+  <div class="banner_main">
+<img src="images/banner_implementation_scenarios.png" alt="S&amp;I Scenarios" />
+	
+</div>
+  <!-- begin .middle -->
+  <div class="middle">
+    <!-- begin .content .nosblt (no sidebar on left) -->
+    <div class="content nosblt">
+      <h4 class="scenarios"><a href="implementation.html" class="blue">NwHIN 1.0 Portfolio</a> > <a href="scenarios.html" class="blue">Scenarios</a> > <a href="scenario_phr.html" class="blue">Reporting a Cancer Diagnosis to a Public Health Cancer Registry</a></h4>
+      <h1 class="testimonials">Reporting a Cancer Diagnosis to a Public Health Cancer Registry</h1>
+      <h6>A proctologist diagnoses a patient with cancer and files and sends a report to a public health cancer registry:</h6>
+      <div class="scenario_center">
+        <p><img src="images/scenario_PH.png" alt="S&amp;I Scenarios" title="A flow diagram illustrating the transmittal of a cancer diagnosis to a public health cancer registry. A patient is examined and X-rayed by a local surgeon and, afterwards, is referred by the surgeon to a cancer center to be seen by a specialist. The surgeon sends the patient’s continuity of care document (CCD), operative notes, as well as the DICOM-formatted chest X-rays to the cancer center for viewing and analysis."/></p></div>
+      <p>A patient visits his proctologist after undergoing a battery of tests to determine whether or not he has a malignant tumor in his colon. Upon review of the tests, the proctologist diagnoses him with colon cancer.  The hospital registrar sends an electronic report and conclusive test results of this cancer diagnosis to the state cancer registry following the patient&rsquo;s visit.  The Centers for Disease Control and Prevention&rsquo;s (CDC) National Program of Cancer Registries (NPCR) collects data through state and local registries on the occurrence of cancer; the type, extent, and location of the cancer; and the type of initial treatment.  This is critical for cancer control activities aimed at reducing cancer morbidity and mortality, and is required by law.</p>
+      <div class="mu">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/clipboard_check.png" alt="Meaningful Use Objectives" /> </td>
+         <td width="15">&nbsp;</td>
+         <td valign="middle"><p class="mu"><strong>Meaningful Use Stage 2 Objectives related to cancer case reporting: </strong>Capability to identify and report cancer cases to a state cancer registry, except where prohibited, and in accordance with applicable law and practice. <em>(Meaningful Use Menu Set 5 for EPs)</em></p></td></tr></table>
+</div>
+<br />  
+      <h6>Common workflow steps for this scenario:</h6>
+     <div class="table_scenario1">
+     <table width="946" border="0" cellspacing="0" cellpadding="0">
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_1.png" alt="1" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">After diagnosing the patient, the proctologist enters the cancer case data into his hospital&rsquo;s EHR. The case data is structured in accordance with the HL7 CDA Release 2 Content Structure Specification and the HL7 Implementation Guide for Healthcare Provider Reporting to Central Cancer Registries using SNOMED CT and LOINC 2.38 Vocabulary Standards.</td>
+       </tr>
+       <tr>
+         <td height="15" align="left" valign="top">&nbsp;</td>
+         <td height="15">&nbsp;</td>
+         <td height="15" valign="middle">&nbsp;</td>
+       </tr>
+       <tr>
+         <td width="40" align="left" valign="top"> <img src="images/scenario_2.png" alt="2" /> </td>
+         <td width="15">&nbsp;</td>
+         <td width="891" valign="middle">The EHR that is used by the proctologist automatically sends the cancer case reporting data to the state&rsquo;s cancer registry.  The state&rsquo;s system processes and stores the cancer case report.</td>
+       </tr>
+     </table>
+</div>
+      <br />
+      <h6>NwHIN 1.0 specifications and resources recommended for scenario:</h6>
+      <div class="table_scenario2">
+        <table width="956" border="0" cellspacing="10" cellpadding="10">
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#0194D3">
+              <h4 class="scenario2"> Content Structure</h4>
+              Guidance that specifies how to structure health information to ensure proper exchange</td>
+            <td width="587" align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://www.cdc.gov/ehrmeaningfuluse/cancer.html">HL7 Implementation Guide for Healthcare Provider Reporting to Central Cancer Registries</a></li>
+              <li><a href="http://wiki.siframework.org/file/view/V251_IG_SIF_LABRESULTS_R1_N1_v15_Pilot_Use_Only.pdf" target="_new">HL7 v.2.5.1 Laboratory Results Interface Implementation Guide</a></li></ul></td>
+          </tr>
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#002B54">
+              <h4 class="scenario2">Vocabulary &amp; Code Sets</h4>
+              Specifications that identify common naming convention necessary for proper health information exchange</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://loinc.org">Logistical Observation Identifiers names and Codes (LOINC) 2.38</a></li>
+              <li><a href="http://www.ihtsdo.org/join-us/use-snomed-ct-licenses/" target="_new">Systematized Nomenclature of Medicine--Clinical Terms (SNOMED-CT)</a></li></ul></td>
+          </tr>
+          <tr>
+            <td width="299" align="left" valign="top" bgcolor="#BF311A"><h4 class="scenario2">Transport and Security</h4>
+              Mechanisms and processes that safely exchange health information over the Internet</td>
+            <td align="left" valign="middle" bgcolor="#E6E6E6"><ul>
+              <li><a href="http://www.naaccr.org/LinkClick.aspx?fileticket=U-3o31G2Lik%3d&amp;tabid=126&amp;mid=466">NAACCR Standards Volume 2, Version 12</a></li>
+            </ul></td>
+          </tr>
+        </table>
+      </div>
+      <p>&nbsp;</p>
+</div>
+    <!-- end .content .nosblt -->
+  </div>
+  <!-- end .middle -->
+  <!-- begin .footer -->
+  <div class="footer">
+    <p>&nbsp;</p>
+  </div>
+  <!-- end .footer -->
+</div>
+<!-- end .container -->
+</body>
+</html>
